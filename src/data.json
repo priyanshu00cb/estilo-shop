@@ -1,0 +1,52 @@
+{
+    "products": [
+        {
+            "_id": "dress1",
+            "image": "/images/image1.jpg",
+            "title": "Eyebogler",
+            "description": "Men's Regular Fit T-Shirt",
+            "availableSizes": ["XL", "XXL"],
+            "price": 285
+        },
+        {
+            "_id": "dress2",
+            "image": "/images/image2.jpg",
+            "title": "Hooded Denim",
+            "description": "AVP Krazzy X Men's Hooded Denim Shirt Full Sleeve Casual",
+            "availableSizes": ["M", "L", "XL"],
+            "price": 599
+        },
+        {
+            "_id": "dress3",
+            "image": "/images/image3.jpg",
+            "title": "Striped T-Shirt",
+            "description": "Jockey Men's Striped Regular Fit T-Shirt",
+            "availableSizes": ["S", "M", "L", "XXL"],
+            "price": 499
+        },
+        {
+            "_id": "dress4",
+            "image": "/images/image4.jpg",
+            "title": "Dennis Lingo",
+            "description": "Dennis Lingo Men's Shirt",
+            "availableSizes": ["M", "L"],
+            "price": 1109
+        },
+        {
+            "_id": "dress5",
+            "image": "/images/image5.jpg",
+            "title": "Casual Check Shirt",
+            "description": "Levis Men's Regular Fit Casual Check Shirts Cotton Full Sleeves",
+            "availableSizes": ["S", "L"],
+            "price": 649
+        },
+        {
+            "_id": "dress6",
+            "image": "/images/image6.jpg",
+            "title": "US Polo",
+            "description": "US Polo Association Men's Striped Regular fit T-Shirt",
+            "availableSizes": ["S", "M", "L", "XL", "XXL"],
+            "price": 679
+        }
+    ]
+}
