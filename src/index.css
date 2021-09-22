@@ -176,7 +176,6 @@ footer{
 }
 
 /* Checkout form */
-/* By mistake I have made changes for this feature in main branch, so to have a track I am adding it here */
 
 .form{
   width: 100%;
@@ -194,4 +193,28 @@ footer{
 input{
   padding: 1rem;
   border: .1rem #c0c0c0 solid;
+}
+
+/* Animation-Modal Product details */
+
+.product-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-height: 96vh;
+}
+.product-details img{
+  max-height: 100vh;
+  max-width: 46rem;
+  margin: 0 auto;
+}
+.product-details-description{
+  flex: 1 1;
+  margin: 1rem;
+}
+.close-modal{
+  position: absolute;
+  right: 1rem;
+  top: 2.5rem;
+  z-index: 1000;
 }
