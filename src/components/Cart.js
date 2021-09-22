@@ -81,6 +81,7 @@ export default class Cart extends Component {
                                     </button>
                                 </div>
                             </div>
+                            {/* checkout feature */}
                             {this.state.showCheckout && (
                                 <div className="cart">
                                     <form onSubmit={this.createOrder}>

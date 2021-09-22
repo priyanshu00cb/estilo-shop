@@ -18,7 +18,8 @@ class App extends React.Component {
         [],
     }
   }
-
+  
+  // checkout feature
   createOrder = (order) => {
     alert("Need to save order for " + order.name);
   }
