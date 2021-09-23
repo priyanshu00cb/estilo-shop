@@ -1,3 +1,3 @@
 # Estilo Shop
 
-# Step 1: Create React App
+# Step 1: Table Of Content
