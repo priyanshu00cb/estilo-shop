@@ -14,7 +14,7 @@ Add Product To Cart using Animation
 Handle Multiple Click By Adding More Items
 Remove Product
 Show Checkout Form
-Create Order with user friendly id
+Create Order with user friendly id.
 Admin Section to see list of products
 Using postman to add or remove products and orders
 
