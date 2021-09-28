@@ -235,7 +235,7 @@ show loading if no filteredProducts
 App.js
 remove Filter props
 check result
-update task and branch
+update task and branch.
 
 C. Add Redux To Cart
 Updte task and branch
