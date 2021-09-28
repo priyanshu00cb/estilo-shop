@@ -1,11 +1,14 @@
 // feature1
 import React from 'react';
 import { Provider } from 'react-redux';
-import Cart from './components/Cart';
-import Filter from './components/Filter';
-import Products from './components/Products';
+// import Cart from './components/Cart';
+// import Filter from './components/Filter';
+// import Products from './components/Products';
 // import data from "./data.json";
 import store from './store';
+import {BrowserRouter, Route, Link} from 'react-router-dom';
+import HomeScreen from './screens/HomeScreen';
+import AdminScreen from './screens/AdminScreen';
 
 class App extends React.Component {
 
@@ -84,39 +87,44 @@ class App extends React.Component {
   render(){
     return (
       <Provider store={store}>
-      <div className="grid-container">
-        <header>
-          <a href="/">Estilo Shop</a>
-        </header>
-        <main>
-          <div className="content">
-            <div className="main">
-              {/* <Filter count={this.state.products.length}
-              size={this.state.size}
-              sort={this.state.sort}
-              filterProducts={this.filterProducts}
-              sortProducts={this.sortProducts}
-              ></Filter> */}
-              <Filter></Filter>
-              {/* <Products products={this.state.products}
-               addToCart={this.addToCart}
-               ></Products> */}
-               {/* <Products addToCart={this.addToCart}
-               ></Products> */}
-               <Products></Products>
-            </div>
-            <div className="sidebar">
-              {/* <Cart cartItems={this.state.cartItems} 
-              removeFromCart={this.removeFromCart} 
-              createOrder={this.createOrder} /> */}
-              <Cart />
-            </div>
+        <BrowserRouter>
+          <div className="grid-container">
+            <header>
+              <Link to="/">Estilo Shop</Link>
+              <Link to="/admin">Admin</Link>
+            </header>
+            <main>
+              <Route path="/admin" component={AdminScreen} />
+              <Route path="/" component={HomeScreen} exact />
+              {/* <div className="content">
+                <div className="main"> */}
+                  {/* <Filter count={this.state.products.length}
+                  size={this.state.size}
+                  sort={this.state.sort}
+                  filterProducts={this.filterProducts}
+                  sortProducts={this.sortProducts}
+                  ></Filter> */}
+                  {/* <Filter></Filter> */}
+                  {/* <Products products={this.state.products}
+                  addToCart={this.addToCart}
+                  ></Products> */}
+                  {/* <Products addToCart={this.addToCart}
+                  ></Products> */}
+                  {/* <Products></Products>
+                </div>
+                <div className="sidebar"> */}
+                  {/* <Cart cartItems={this.state.cartItems} 
+                  removeFromCart={this.removeFromCart} 
+                  createOrder={this.createOrder} /> */}
+                  {/* <Cart />
+                </div>
+              </div> */}
+            </main>
+            <footer>
+              All right is reserved &copy; Priyanshu Ranjan
+            </footer>
           </div>
-        </main>
-        <footer>
-          All right is reserved
-        </footer>
-      </div>
+        </BrowserRouter>
       </Provider>
     );
   }
