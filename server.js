@@ -6,8 +6,11 @@ const shortid = require("shortid");
 const app = express();
 app.use(bodyParser.json());
 
+app.use("/", express.static(__dirname + "/build"));
+app.get("/", (req, res) => res.sendFile(__dirname + "/build/index.html"));
+
 mongoose.connect(
-    "mongodb://localhost/estilo-shop-db",
+    process.env.MONGODB_URL || "mongodb://localhost/estilo-shop-db",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
