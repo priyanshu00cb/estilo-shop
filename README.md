@@ -3,7 +3,9 @@
 1. Introduction
 
 A. Introduction
+
 Fully-Functional Shopping Cart
+
 Instant Feedback
 Animated and Intuitive Design
 List Products
